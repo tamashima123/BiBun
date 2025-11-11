@@ -1,0 +1,90 @@
+<DOCTYPE! html>
+<head>
+    <title>テスト</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+<body>
+    <div>
+    <p>問1,2について、f(x)を微分せよ。また問3を解け。</p>
+    <p id="one"></p>
+    <p id="two"></p>
+    <p id="three"></p>
+    </div> 
+    <script>
+        const randone = Math.random();
+        const randtwo = Math.random();
+        const randthr = Math.random();
+        let ichi = document.getElementById("one");
+        let tsu = document.getElementById("two");
+        let sun = document.getElementById("three");
+
+ 
+        if (randone<0.1) {
+            ichi.textContent = "問1." + "\(f(x) = e^x\)"
+        } else if (0.1<=randone<0.2) {
+            ichi.textContent = "問1." + "\(f(x) = e^{2x}\)"
+        } else if (0.2<=randone<0.3) {
+            ichi.textContent = "問1." + "\(f(x) = e^{3x}\)"
+        } else if (0.3<=randone<0.4) {
+            ichi.textContent = "問1." + "\(f(x) = x^3 + 2x^2\)"
+        } else if (0.4<=randone<0.5) {
+            ichi.textContent = "問1." + "\(f(x) = \sqrt{x}\)"
+        } else if (0.5<=randone<0.6) {
+            ichi.textContent = "問1." + "\(f(x) = \log{x}\)"
+        } else if (0.6<=randone<0.7) {
+            ichi.textContent = "問1." + "\(f(x) = 3x - 6x^2\)"
+        } else if (0.7<=randone<0.8) {
+            ichi.textContent = "問1." + "\(f(x) = \sin{x}\)"
+        } else if (0.8<=randone<0.9) {
+            ichi.textContent = "問1." + "\(f(x) = \frac{\tan{x}}{10}\)"
+        } else if (0.9<=randone<=1) {
+            ichi.textContent = "問1." + "\(f(x) = \log{x^2}\)"
+        }
+
+        if (randtwo<0.1) {
+            tsu.textContent = "問2." + "\(f(x) = x^x\)" + "ただし、x>0とする\)"
+        } else if (0.1<=randtwo<0.2) {
+            tsu.textContent = "問2." + "\(f(x) = x^{x^x}\)" + "ただし、x>0とする"
+        } else if (0.2<=randtwo<0.3) {
+            tsu.textContent = "問2." + "\(f(x) = \log x^2\)"
+        } else if (0.3<=randtwo<0.4) {
+            tsu.textContent = "問2." + "\(f(x) = \frac{x^3 + 2x^2}{x+2}\)"
+        } else if (0.4<=randtwo<0.5) {
+            tsu.textContent = "問2." + "\(f(x) = log_{10}x^2\)"
+        } else if (0.5<=randtwo<0.6) {
+            tsu.textContent = "問2." + "\(f(x) = x^2a^x\)" + "ただし、a>0とする"
+        } else if (0.6<=randtwo<0.7) {
+            tsu.textContent = "問2." + "\(f(x) = (\tan{x}\sin{x})^3\)"
+        } else if (0.7<=randtwo<0.8) {
+            tsu.textContent = "問2." + "\(f(x) = \frac{2x^2+1}{(\tan{x})^2}\)"
+        } else if (0.8<=randtwo<0.9) {
+            tsu.textContent = "問2." + "\(f(x) = \frac{e\log{x^2}}{cos{3x}}\)"
+        } else if (0.9<=randtwo<=1) {
+            tsu.textContent = "問2." + "\(f(x) = {\sin^{3}{5x}}\)"
+        }
+
+        if (randthr<0.1) {
+            sun.textContent = "問3." + "x,yが実数であるとき、z = x^2 + y^2 - 2xy + 3 の最大値、最小値を微分を利用して求めよ"
+        } else if (0.1<=randthr<0.2) {
+            sun.textContent = "問3." + "f(x) = (x^3 + 1)[e^{x^(1/2)}]とおく。このときf(x)のn階微分をnを用いて表せ"
+        } else if (0.2<=randthr<0.3) {
+            sun.textContent = "問3." + "\(f(x)\)" + "が連続、微分可能とはどういうことかそれぞれ説明せよ "
+        } else if (0.3<=randthr<0.4) {
+            sun.textContent = "問3." + "\(f(x) = \frac{e^x+e^{-x}}{2}\)" + "のグラフをかけ"
+        } else if (0.4<=randthr<0.5) {
+            sun.textContent = "問3." + "点(0,1)を通り、y = x^3 - a(x^2) に接するような直線が2本存在するようなaの値を求めよ"
+        } else if (0.5<=randthr<0.6) {
+            sun.textContent = "問3." + "x^2a^x"
+        } else if (0.6<=randthr<0.7) {
+            sun.textContent = "問3." + "f(x) = tan(x)sin(x)"
+        } else if (0.7<=randthr<0.8) {
+            sun.textContent = "問3." + "f(x) = {(2x^2 +1) / tan(x)}"
+        } else if (0.8<=randthr<0.9) {
+            sun.textContent = "問3." + "f(x) = {elog(x)} / {cos(x)}"
+        } else if (0.9<=randthr<=1) {
+            sun.textContent = "問3." + "f(x) = {sin(5x)}^10"
+        }
+
+    </script>
+</body>
