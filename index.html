@@ -19,7 +19,7 @@
     <p class="mondai">次の問題を解け</p>
     <p id="three"></p>
     <script>
-        const randone = Math.random();
+        const randone = 1.1 * Math.random();
         const randtwo = Math.random();
         const randthr = Math.random();
         let ichi = document.getElementById("one");
@@ -45,8 +45,10 @@
             ichi.textContent = "問8.　" + "\\( f(x) = \\sin{x} \\)"
         } else if (0.8 <= randone && randone < 0.9) {
             ichi.textContent = "問9.　" + "\\( f(x) = \\frac{\\tan{x}}{10} \\)"
+        } else if (0.9 <= randone && randone < 1.0) {
+            ichi.textContent = "問10.　" + "\\( f(x) = \\frac{\\sin{x}}{x} \\)" + "（ただし、" + "\\(x≠0\\)" + "とする）"
         } else {
-            ichi.textContent = "問10.　" + "\\( f(x) = \\log{x^2} \\)"
+            ichi.textContent = "問11.　" + "\\( f(x) = \\log{x^2} \\)"
         }
 
         if (randtwo<0.1) {
