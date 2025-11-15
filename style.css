@@ -2,7 +2,8 @@
     
 body{
     margin: 10px;
-    background-color: #ff00c4;
+    background: linear-gradient(to right,#e60000,#f39800,#fff100,#009944,#0068b7,#1d2088,#920783);
+
 }
 .mondai{
     font-size: 30px;
