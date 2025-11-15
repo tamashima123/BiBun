@@ -3,10 +3,11 @@
 body{
     margin: 10px;
 }
-#mondai{
+.mondai{
     font-size: 20px;
     font-famyly: "Yu Mincho";
 }
 #toi{
     font-size: 25px;
 }
+
