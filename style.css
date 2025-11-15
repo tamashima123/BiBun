@@ -21,7 +21,7 @@ body{
    
 }
 .toi{
-    font-size: 50px;
+    font-size: 30px;
      display: flex;
   align-items: center;
   justify-content: center;
@@ -29,19 +29,19 @@ body{
     
 }
 #one{
-    font-size: 50px;
+    font-size: 30px;
      display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#two{ font-size: 50px;
+#two{ font-size: 30px;
      display: flex;
   align-items: center;
   justify-content: center;   
 }
 #three{
-    font-size: 50px;
+    font-size: 30px;
      display: flex;
   align-items: center;
   justify-content: center;  
