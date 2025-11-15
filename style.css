@@ -15,10 +15,15 @@ body{
 .mondai{
     font-size: 50px;
     font-famyly: "Yu Mincho";
+     display: flex;
+  align-items: center;
+  justify-content: center;
    
 }
 .toi{
     font-size: 25px;
-    
+     display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
