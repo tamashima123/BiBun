@@ -5,6 +5,13 @@ body{
     background: linear-gradient(to right,#e60000,#f39800,#fff100,#009944,#0068b7,#1d2088,#920783);
 
 }
+
+#JUST{
+    font-size:100px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .mondai{
     font-size: 50px;
     font-famyly: "Yu Mincho";
