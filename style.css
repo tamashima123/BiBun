@@ -34,3 +34,16 @@ body{
   align-items: center;
   justify-content: center;
 }
+
+#two{ font-size: 50px;
+     display: flex;
+  align-items: center;
+  justify-content: center;   
+}
+#three{
+    font-size: 50px;
+     display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
