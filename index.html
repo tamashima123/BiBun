@@ -57,7 +57,7 @@
             tsu.textContent = "問12.　" + "\\( f(x) = x^{x^x} \\)" + "　（ただし、" + "\\( x>0 \\)" + "　とする）"
         } else if (0.2 <= randtwo && randtwo < 0.3) {
             tsu.textContent = "問13.　" + "\\( f(x) = \\log{x^2} \\)"
-        } else if (0.3 <= randtwo && randwtwo < 0.4) {
+        } else if (0.3 <= randtwo && randtwo < 0.4) {
             tsu.textContent = "問14.　" + "\\( f(x) = \\frac{x^3+2x^2}{x+2} \\)"
         } else if (0.4 <= randtwo && randtwo < 0.5) {
             tsu.textContent = "問15.　" + "\\( f(x) = log_{10}x^2 \\)"
@@ -98,6 +98,8 @@
         window.addEventListener("load", () => {
             MathJax.typesetPromise();
         });
+
+        console.log(randthr)
 
     </script>
     <a href="answer.html" target="_blank">解答、解説はこちら</a>
