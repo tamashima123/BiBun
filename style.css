@@ -8,6 +8,8 @@ body{
 .mondai{
     font-size: 30px;
     font-famyly: "Yu Mincho";
+    align-items: center;
+    justify-content: center;
 }
 .toi{
     font-size: 25px;
