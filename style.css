@@ -13,5 +13,7 @@ body{
 }
 .toi{
     font-size: 25px;
+    align-items: center;
+    justify-content: center;
 }
 
