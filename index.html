@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    <p id="taitle">叡智のシャッフル</p>
-    <p class="mondai">f(x)を微分せよ</p>
+    <p id="taitoru">叡智のシャッフル</p>
+    <p class="mondaibun">f(x)を微分せよ</p>
     <p id="one"></p>
     <p id="two"></p>
-    <p class="mondai">次の問題を解け</p>
+    <p class="mondaibun">次の問題を解け</p>
     <p id="three"></p>
     <script>
         const randonep = Math.random();
@@ -41,7 +41,7 @@
         } else if (0.8 <= randone && randone < 0.9) {
             ichi.textContent = "問9.　" + "\\( f(x) = \\frac{\\tan{x}}{10} \\)"
         } else if (0.9 <= randone && randone < 1.0) {
-            ichi.textContent = "問10.　" + "\\( f(x) = \\frac{\\sin{x}}{x} \\)" + "（ただし、" + "\\(x≠0\\)" + "とする）"
+            ichi.textContent = "問10.　" + "\\( f(x) = \\frac{\\sin{x}}{x}　(x≠0)　\\)"
         } else if (1.0 <= randone && randone < 1.1) {
             ichi.textContent = "問31.　" + "\\( f(x) = e^{ \\sin{2x} } \\)"
         } else if (1.1 <= randone && randone < 1.2) {
@@ -51,15 +51,15 @@
         } else if (1.3 <= randone && randone < 1.4) {
             ichi.textContent = "問34.　" + "\\( f(x) = \\sin^3(x^2) \\)"
         } else if (1.4 <= randone && randone < 1.5) {
-            ichi.textContent = "問35.　" + "\\( f(x) = x^{ \\cos{x} }　（x>0）"
+            ichi.textContent = "問35.　" + "\\( f(x) = x^{ \\cos{x} }　(x>0) \\)"
         } else {
             ichi.textContent = "問36.　" + "\\( f(x) = \\log_{10}(tanx)\\)"
         }
 
         if (randtwo<0.1) {
-            tsu.textContent = "問11.　" + "\\( f(x) = x^x \\)" + "　（ただし、" + "\\( x>0 \\)" + "　とする）"
+            tsu.textContent = "問11.　" + "\\( f(x) = x^x (x>0) \\)"
         } else if (0.1 <= randtwo && randtwo < 0.2) {
-            tsu.textContent = "問12.　" + "\\( f(x) = x^{x^x} \\)" + "　（ただし、" + "\\( x>0 \\)" + "　とする）"
+            tsu.textContent = "問12.　" + "\\( f(x) = x^{x^x}　(x>0) \\)"
         } else if (0.2 <= randtwo && randtwo < 0.3) {
             tsu.textContent = "問13.　" + "\\( f(x) = \\log{x^2} \\)"
         } else if (0.3 <= randtwo && randtwo < 0.4) {
@@ -67,7 +67,7 @@
         } else if (0.4 <= randtwo && randtwo < 0.5) {
             tsu.textContent = "問15.　" + "\\( f(x) = log_{10}x^2 \\)"
         } else if (0.5 <= randtwo && randtwo < 0.6) {
-            tsu.textContent = "問16.　" + "\\( f(x) = {x^2}{a^x} \\)" + "　（ただし、" + "\\( x>0 \\)" + "　とする）"
+            tsu.textContent = "問16.　" + "\\( f(x) = {x^2}{a^x}　(x>0) \\)"
         } else if (0.6 <= randtwo && randtwo < 0.7) {
             tsu.textContent = "問17.　" + "\\( f(x) = (\\tan{x}\\sin{x})^3 \\)"
         } else if (0.7 <= randtwo && randtwo < 0.8) {
