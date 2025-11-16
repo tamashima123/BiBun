@@ -1,0 +1,105 @@
+<DOCTYPE! html>
+<head>
+    <title>ランダム微分</title>
+    <meta charset="utf-8">
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['\\(', '\\)']] },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        #toi{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="toi">
+    <p>問1,2について、f(x)を微分せよ。また問3を解け。</p>
+    <p id="one"></p>
+    <p id="two"></p>
+    <p id="three"></p>
+    </div> 
+    <script>
+        const randone = Math.random();
+        const randtwo = Math.random();
+        const randthr = Math.random();
+        let ichi = document.getElementById("one");
+        let tsu = document.getElementById("two");
+        let sun = document.getElementById("three");
+
+ 
+        if (randone<0.1) {
+            ichi.textContent = "問1.　" + "\\( f(x) = e^x \\)"
+        } else if (0.1 <= randone && randone < 0.2) {
+            ichi.textContent = "問1.　" + "\\( f(x) = e^{2x} \\)"
+        } else if (0.2 <= randone && randone < 0.3) {
+            ichi.textContent = "問1.　" + "\\( f(x) = e^{3x} \\)"
+        } else if (0.3 <= randone && randone < 0.4) {
+            ichi.textContent = "問1.　" + "\\( f(x) = x^3+2x^2 \\)"
+        } else if (0.4 <= randone && randone < 0.5) {
+            ichi.textContent = "問1.　" + "\\( f(x) = \\sqrt{x} \\)"
+        } else if (0.5 <= randone && randone < 0.6) {
+            ichi.textContent = "問1.　" + "\\( f(x) = \\log{x} \\)"
+        } else if (0.6 <= randone && randone < 0.7) {
+            ichi.textContent = "問1.　" + "\\( f(x) = 3x-6x^2 \\)"
+        } else if (0.7 <= randone && randone < 0.8) {
+            ichi.textContent = "問1.　" + "\\( f(x) = \\sin{x} \\)"
+        } else if (0.8 <= randone && randone < 0.9) {
+            ichi.textContent = "問1.　" + "\\( f(x) = \\frac{\\tan{x}}{10} \\)"
+        } else {
+            ichi.textContent = "問1.　" + "\\( f(x) = \\log{x^2} \\)"
+        }
+
+        if (randtwo<0.1) {
+            tsu.textContent = "問2.　" + "\\( f(x) = x^x \\)" + "　（ただし、" + "\\( x>0 \\)" + "　とする）"
+        } else if (0.1 <= randone && randone < 0.2) {
+            tsu.textContent = "問2.　" + "\\( f(x) = x^{x^x} \\)" + "　（ただし、" + "\\( x>0 \\)" + "　とする）"
+        } else if (0.2 <= randone && randone < 0.3) {
+            tsu.textContent = "問2.　" + "\\( f(x) = \\log{x^2} \\)"
+        } else if (0.3 <= randone && randone < 0.4) {
+            tsu.textContent = "問2.　" + "\\( f(x) = \\frac{x^3+2x^2}{x+2} \\)"
+        } else if (0.4 <= randone && randone < 0.5) {
+            tsu.textContent = "問2.　" + "\\( f(x) = log_{10}x^2 \\)"
+        } else if (0.5 <= randone && randone < 0.6) {
+            tsu.textContent = "問2.　" + "\\( f(x) = {x^2}{a^x} \\)" + "　（ただし、" + "\\( x>0 \\)" + "　とする）"
+        } else if (0.6 <= randone && randone < 0.7) {
+            tsu.textContent = "問2.　" + "\\( f(x) = (\\tan{x}\\sin{x})^3 \\)"
+        } else if (0.7 <= randone && randone < 0.8) {
+            tsu.textContent = "問2.　" + "\\( f(x) = \\frac{2x^2+1}{(\\tan{x})^2} \\)"
+        } else if (0.8 <= randone && randone < 0.9) {
+            tsu.textContent = "問2.　" + "\\( f(x) = \\frac{e\\log{x^2}}{cos{3x}} \\)"
+        } else {
+            tsu.textContent = "問2.　" + "\\( f(x) = {\\sin^{3}{5x}} \\)"
+        }
+
+        if (randthr<0.1) {
+            sun.textContent = "問3.　" + "\\( x,yが実数であるとき、 z = {x^2}+{y^2}-2xy+3 で定まる z の最大値、最小値を微分を利用して求めよ \\)"
+        } else if (0.1 <= randone && randone < 0.2) {
+            sun.textContent = "問3.　" + "\\( f(x) = {x^2}{e^x} , g(x) = {x^n} とおく。このとき f(x) および g(x) のn階微分をそれぞれnを用いて表せ \\)"
+        } else if (0.2 <= randone && randone < 0.3) {
+            sun.textContent = "問3.　" + "\\( f(x) がx=aで連続、微分可能とはどういうことかそれぞれ説明せよ \\)"
+        } else if (0.3 <= randone && randone < 0.4) {
+            sun.textContent = "問3.　" + "\\( f(x) = \\frac{e^x+e^{-x}}{2} のグラフをかけ \\)"
+        } else if (0.4 <= randone && randone < 0.5) {
+            sun.textContent = "問3.　" + "\\( 点(0,1)を通り、 y = x^3 - ax^2 に接するような直線が2本存在するようなaの値を求めよ \\)"
+        } else if (0.5 <= randone && randone < 0.6) {
+            sun.textContent = "問3.　" + "\\( yを -\\frac{π}{2}<y<\\frac{π}{2} とする。このとき x=\\tan^2y をxで微分せよ \\)"
+        } else if (0.6 <= randone && randone < 0.7) {
+            sun.textContent = "問3.　" + "\\( 無限に微分可能な関数f(x)を f(x) = a_0 + a_1{x} + a_2{x^2} + a_3{x^3} + a_4{x^4} +⋯ とおくとき、 a_n をn及びf(x)を用いて表せ \\)"
+        } else if (0.7 <= randone && randone < 0.8) {
+            sun.textContent = "問3.　" + "\\( 任意の実数tを用いて x = t-\\sin{t} , y = 1 -\\cos{t} で表される図形をxy平面上に図示せよ \\)"
+        } else if (0.8 <= randone && randone < 0.9) {
+            sun.textContent = "問3.　" + "\\( 関数f(x),g(x)がどちらもn次導関数をもつとする。このとき f(x)g(x) のn次導関数をn,f(x),g(x)を用いて表せ \\)"
+        } else {
+            sun.textContent = "問3.　" + "\\(関数 y=x^4−2x^3+1 の二重接線の方程式を求めよ。 \\)"
+        }
+
+        window.addEventListener("load", () => {
+            MathJax.typesetPromise();
+        });
+
+    </script>
+</body>
